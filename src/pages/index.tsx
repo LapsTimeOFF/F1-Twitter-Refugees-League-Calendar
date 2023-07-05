@@ -10,8 +10,9 @@ import {
   Divider,
   Typography,
 } from "@mui/material";
-import { raceEvents } from "./data";
+import { raceEvents } from "../data";
 import { FormattedDate } from "react-intl";
+import { Abbreviation } from "@/components/Abbreviation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -81,7 +82,7 @@ export default function Home() {
                   <Typography variant="h6" sx={{ fontFamily: inter }}>
                     Qualifying:{" "}
                     {raceEvent.date.qualifying === "TBD" ? (
-                      "TBD"
+                      <Abbreviation title="To Be Decided">TBD</Abbreviation>
                     ) : (
                       <FormattedDate
                         value={raceEvent.date.qualifying}
@@ -98,7 +99,7 @@ export default function Home() {
                   <Typography variant="h6" sx={{ fontFamily: inter }}>
                     Race:{" "}
                     {raceEvent.date.race === "TBD" ? (
-                      "TBD"
+                      <Abbreviation title="To Be Decided">TBD</Abbreviation>
                     ) : (
                       <FormattedDate
                         value={raceEvent.date.race}
@@ -117,7 +118,7 @@ export default function Home() {
                 <Typography variant="h6" sx={{ fontFamily: inter }}>
                   Session:{" "}
                   {raceEvent.date.session === "TBD" ? (
-                    "TBD"
+                    <Abbreviation title="To Be Decided">TBD</Abbreviation>
                   ) : (
                     <FormattedDate
                       value={raceEvent.date.session}

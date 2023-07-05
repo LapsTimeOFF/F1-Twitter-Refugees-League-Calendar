@@ -172,9 +172,3 @@ export const raceEvents: RaceEvent[] = [
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmotorsportguides.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fbrazilian-GP-2.jpg&f=1&nofb=1&ipt=80cdfffb4e539429f82f923f2a8db3830c3629566b75c5ea7ebde0dfabd24327&ipo=images",
   },
 ];
-
-const MyComponent = () => {
-  return <p>hello</p>;
-};
-
-export default MyComponent;
