@@ -8,20 +8,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <ThemeProvider
-          theme={createTheme({
-            palette: {
-              mode: "dark",
-              primary: {
-                main: "#ff0000",
-              },
-            },
-          })}
-        >
-          <CssBaseline />
-          <Main />
-          <NextScript />
-        </ThemeProvider>
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );
