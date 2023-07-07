@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { Box, Container, Divider, Typography } from "@mui/material";
-import { raceEvents } from "../data";
+import { raceEvents } from "@/data";
 import GPCard from "@/components/GPCard";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,7 +33,9 @@ export default function Home() {
           >
             <b>League Calendar</b>
           </Typography>
-          <Divider />
+          <Divider sx={{
+            my:2
+          }}/>
           <Typography
             variant="h3"
             sx={{ textAlign: "center", fontFamily: inter }}
@@ -41,24 +43,13 @@ export default function Home() {
             <b>Season 1: F1 Twitter Refugees league</b>
           </Typography>
           <Typography sx={{ textAlign: "center", fontFamily: inter }}>
-            <b>Note:</b> This calendar is not official and is subject to change.
+            <b>Note:</b> This calendar is subject to change.
           </Typography>
-          <Divider />
+          <Divider sx={{
+            my:2,
+          }}/>
         </Box>
 
-        {/* type RaceEvent = {
-          gpName: string;
-          countryFlag: string;
-          countryName: string;
-          date: {
-            qualifying?: Date | "TBD" | "Cancelled";
-            race?: Date | "TBD" | "Cancelled";
-            session?: Date | "TBD" | "Cancelled";
-          };
-          circuitName: string;
-          circuitImage: string;
-          done: boolean;
-        }; */}
         {raceEvents.map((raceEvent, _i) => (
           <GPCard raceEvent={raceEvent} index={_i} font={inter} key={_i} />
         ))}
