@@ -4,6 +4,7 @@ import {
   CardContent,
   Typography,
   CardMedia,
+  Chip,
 } from "@mui/material";
 import Link from "next/link";
 import React, { FC } from "react";
@@ -29,6 +30,11 @@ const GPCard: FC<Props> = ({ raceEvent, index, font }) => {
     >
       <CardActionArea LinkComponent={Link} href={`/events/${index}`}>
         <CardContent>
+          {raceEvent.clickForDetails && (
+            <Chip label="Click on the card for more informations" sx={{
+              fontSize: 18
+            }} color="info" />
+          )}
           <Typography variant="h4" sx={{ fontFamily: font }}>
             {raceEvent.gpName}
           </Typography>
