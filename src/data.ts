@@ -2,13 +2,8 @@ export type RaceEvent = {
   gpName: string;
   countryFlag: string;
   countryName: string;
-  // date: {
-  //   qualifying?: Date | "TBD" | "Cancelled";
-  //   race?: Date | "TBD" | "Cancelled";
-  //   session?: Date | "TBD" | "Cancelled"; // For testing only
-  // };
   date: {
-    [key in SessionsName]?: Date | 'TBD' | 'Cancelled';
+    [key in SessionsName]?: string | 'TBD' | 'Cancelled';
   };
   circuitName: string;
   circuitImage: string;
@@ -31,9 +26,6 @@ export type SessionResult = {
 
 export type SessionsName = 'qualifying' | 'race' | 'session';
 
-// ALL THE DATES ARE TBD FOR THE MOMENT
-// France Testing, Bahrain, Qatar, China, Japan, Barcelona, Austria, Silverstone, Spa, Monza, COTA, Brazil
-
 export const raceEvents: RaceEvent[] = [
   {
     results: {
@@ -42,7 +34,7 @@ export const raceEvents: RaceEvent[] = [
           time: '1:29.814',
           gap: 'POLE POSITION',
           name: 'Natgracing',
-          fastest: true
+          fastest: true,
         },
         {
           time: '1:30.789',
@@ -100,7 +92,7 @@ export const raceEvents: RaceEvent[] = [
           time: '1:32.602',
           gap: '+31.77',
           name: 'IV477',
-          fastest: true
+          fastest: true,
         },
         {
           time: '1:35.307',
@@ -140,8 +132,8 @@ export const raceEvents: RaceEvent[] = [
     countryFlag: '🇫🇷',
     circuitName: 'Circuit du Castellet',
     date: {
-      qualifying: new Date('2023-08-20T17:00:00.000Z'),
-      race: new Date('2023-08-20T17:15:00.000Z'),
+      qualifying: '2023-08-20T17:00:00.000Z',
+      race: '2023-08-20T17:15:00.000Z',
     },
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bandoltourisme.fr%2Fwp-content%2Fuploads%2F2021%2F05%2FSans-titre-2-1200x675.jpg&f=1&nofb=1&ipt=cdd8ad94b9f8770ffe92d163dfa3a23bc2afe915092893bc9c88af2583dfbbba&ipo=images',
@@ -156,8 +148,8 @@ export const raceEvents: RaceEvent[] = [
     countryName: 'Bahrain',
     countryFlag: '🇧🇭',
     date: {
-      qualifying: new Date('2023-09-03T17:00:00.000Z'),
-      race: new Date('2023-09-03T17:20:00.000Z'),
+      qualifying: '2023-09-03T17:00:00.000Z',
+      race: '2023-09-03T17:20:00.000Z',
     },
     circuitName: 'Bahrain International Circuit',
     circuitImage:

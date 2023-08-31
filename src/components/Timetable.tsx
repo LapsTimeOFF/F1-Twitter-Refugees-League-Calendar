@@ -1,4 +1,4 @@
-import { RaceEvent, SessionsName } from "@/data";
+import { RaceEvent, SessionsName } from '@/data';
 import {
   TableContainer,
   Paper,
@@ -8,14 +8,14 @@ import {
   TableCell,
   TableBody,
   Chip,
-} from "@mui/material";
-import React, { FC } from "react";
-import { FormattedDate, FormattedTime } from "react-intl";
+} from '@mui/material';
+import React, { FC } from 'react';
+import { FormattedDate, FormattedTime } from 'react-intl';
 
 export const sessionsDisplayName: { [key in SessionsName]: string } = {
-  qualifying: "Qualifying",
-  race: "Race",
-  session: "Session",
+  qualifying: 'Qualifying',
+  race: 'Race',
+  session: 'Session',
 };
 
 type Props = {
@@ -23,6 +23,8 @@ type Props = {
 };
 
 const Timetable: FC<Props> = ({ event }) => {
+  console.log(event);
+
   return (
     <TableContainer component={Paper}>
       <Table>
@@ -38,18 +40,18 @@ const Timetable: FC<Props> = ({ event }) => {
           {Object.entries(event.date).map(([key, value]) => (
             <TableRow
               key={key}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell>{sessionsDisplayName[key as SessionsName]}</TableCell>
               <TableCell>
-                {value instanceof Date ? (
+                {value !== ('TBD' || 'Cancelled') ? (
                   <FormattedDate value={value} day="numeric" month="long" />
                 ) : (
                   value
                 )}
               </TableCell>
               <TableCell>
-                {value instanceof Date ? (
+                {value !== ('TBD' || 'Cancelled') ? (
                   <FormattedTime
                     value={value}
                     hour12={false}
@@ -62,15 +64,15 @@ const Timetable: FC<Props> = ({ event }) => {
                 )}
               </TableCell>
               <TableCell>
-                {value instanceof Date ? (
+                {value !== ('TBD' || 'Cancelled') ? (
                   <>
-                    {value > new Date() ? (
+                    {new Date(value) > new Date() ? (
                       <Chip color="success" label="Upcoming" />
                     ) : (
                       <Chip color="error" label="Done" />
                     )}
                   </>
-                ) : value === "TBD" ? (
+                ) : value === 'TBD' ? (
                   <Chip color="info" label="To Be Decided" />
                 ) : (
                   <Chip color="error" label="Cancelled" />
