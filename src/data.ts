@@ -24,8 +24,9 @@ export type RaceEvent = {
 
 export type SessionResult = {
   time: string;
-  delta: string;
+  gap: string;
   name: string;
+  fastest?: boolean;
 }[];
 
 export type SessionsName = 'qualifying' | 'race' | 'session';
@@ -39,47 +40,96 @@ export const raceEvents: RaceEvent[] = [
       qualifying: [
         {
           time: '1:29.814',
-          delta: 'POLE POSITION',
+          gap: 'POLE POSITION',
           name: 'Natgracing',
+          fastest: true
         },
         {
-          time: '1:31.281',
-          delta: '+1.467',
+          time: '1:30.789',
+          gap: '+0.975',
           name: 'IV477',
         },
         {
-          time: '1:31.534',
-          delta: '+1.720',
+          time: '1:31.120',
+          gap: '+1.306',
           name: 'MrBlackSpy',
         },
         {
           time: '1:32.910',
-          delta: '+3.096',
+          gap: '+3.096',
           name: 'Nordotor',
         },
         {
-          time: '1:38.904',
-          delta: '+9.090',
+          time: '1:38.304',
+          gap: '+8.490',
           name: 'Felix_458',
         },
         {
           time: 'DNF',
-          delta: 'DNF',
+          gap: 'DNF',
           name: 'captain angel',
         },
         {
-          time: 'DNQ',
-          delta: 'DNQ',
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
           name: 'Vinny',
         },
         {
-          time: 'DNQ',
-          delta: 'DNQ',
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
           name: 'Mihael03',
         },
         {
-          time: 'DNQ',
-          delta: 'DNQ',
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Alex',
+        },
+      ],
+      race: [
+        {
+          time: '1:33.536',
+          gap: 'WINNER',
+          name: 'Natgracing',
+        },
+        {
+          time: '1:34.078',
+          gap: '+12.88',
+          name: 'Spyder',
+        },
+        {
+          time: '1:32.602',
+          gap: '+31.77',
+          name: 'IV477',
+          fastest: true
+        },
+        {
+          time: '1:35.307',
+          gap: '+46.62',
+          name: 'Felix_458',
+        },
+        {
+          time: 'DNF',
+          gap: 'DNF (Crash on lap 2)',
+          name: 'Captain Angel',
+        },
+        {
+          time: 'DNF',
+          gap: 'DNF (Crash on lap 1)',
+          name: 'Nordotor',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
           name: 'Alex',
         },
       ],

@@ -1,6 +1,7 @@
 import { RaceEvent, SessionResult } from "@/data";
 import {
   Box,
+  Chip,
   Divider,
   Paper,
   Table,
@@ -36,7 +37,7 @@ const Results: FC<Props> = ({ session, results }) => {
             <TableRow>
               <TableCell>Position</TableCell>
               <TableCell align="right">Name</TableCell>
-              <TableCell align="right">Delta</TableCell>
+              <TableCell align="right">Gap to Leader</TableCell>
               <TableCell align="right">Time</TableCell>
             </TableRow>
           </TableHead>
@@ -50,8 +51,10 @@ const Results: FC<Props> = ({ session, results }) => {
                   {_i + 1}
                 </TableCell>
                 <TableCell align="right">{result.name}</TableCell>
-                <TableCell align="right">{result.delta}</TableCell>
-                <TableCell align="right">{result.time}</TableCell>
+                <TableCell align="right">{result.gap}</TableCell>
+                <TableCell align="right">{result.fastest ? (<Chip label={result.time} sx={{
+                  backgroundColor: "#9c27b0"
+                }}/>) : result.time}</TableCell>
               </TableRow>
             ))}
           </TableBody>
