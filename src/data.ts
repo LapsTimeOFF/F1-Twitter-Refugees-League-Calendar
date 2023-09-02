@@ -142,18 +142,117 @@ export const raceEvents: RaceEvent[] = [
     clickForDetails: true,
   },
   {
-    results: {},
-    done: false,
+    results: {
+      qualifying: [
+        {
+          time: '1:29.484',
+          gap: 'POLE POSITION',
+          name: 'Natgracing',
+          fastest: true,
+        },
+        {
+          time: '1:29.979',
+          gap: '+0.495',
+          name: 'IV477',
+        },
+        {
+          time: '1:31.224',
+          gap: '+1.740',
+          name: 'Nordotor',
+        },
+        {
+          time: '1:31.382',
+          gap: '+1.898',
+          name: 'MrBlackSpy',
+        },
+        {
+          time: '1:31.899',
+          gap: '+2.415',
+          name: 'Felix_458',
+        },
+        {
+          time: '1:35.448',
+          gap: '+5.964',
+          name: 'Alex',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'captain angel',
+        },
+      ],
+      race: [
+        {
+          time: '1:33.036',
+          gap: 'WINNER',
+          name: 'Natgracing (+25)',
+        },
+        {
+          time: '1:33.113',
+          gap: '+3.664',
+          name: 'IV477 (+18)',
+        },
+        {
+          time: '1:32.094',
+          gap: '+42.257',
+          name: 'MrBlackSpy (+16 FL)',
+          fastest: true,
+        },
+        {
+          time: '1:34.777',
+          gap: '+57.565',
+          name: 'Felix_458 (+12)',
+        },
+        {
+          time: '1:34.143',
+          gap: '+1:15.116',
+          name: 'Nordotor (+10)',
+        },
+        {
+          time: '1:43:696',
+          gap: 'Technical DNF (Read notes)',
+          name: 'Alex (+8)',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'captain angel',
+        },
+      ],
+    },
+    done: true,
     gpName: 'Bahrain Grand Prix',
     countryName: 'Bahrain',
     countryFlag: '🇧🇭',
     date: {
-      qualifying: '2023-09-03T17:00:00.000Z',
-      race: '2023-09-03T17:20:00.000Z',
+      qualifying: '2023-09-02T17:00:00.000Z',
+      race: '2023-09-02T17:20:00.000Z',
     },
     circuitName: 'Bahrain International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassettocorsa.vip%2Fwp-content%2Fuploads%2F2020%2F12%2FBAHRAIN-INTERNATIONAL-CIRCUIT.jpg&f=1&nofb=1&ipt=abbc95a10a6bf3afe08f65bef9a9486d932bbd462d64a1875481bdf7e85f2ab8&ipo=images',
+    notes:
+      'Note from the Race Direction: even thought Alex did DNF, this DNF was due to technical issue, even due to this event, they have received 8 points.',
   },
   {
     results: {},
