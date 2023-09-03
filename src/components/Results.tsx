@@ -38,7 +38,7 @@ const Results: FC<Props> = ({ session, results }) => {
               <TableCell>Position</TableCell>
               <TableCell align="right">Name</TableCell>
               <TableCell align="right">Gap to Leader</TableCell>
-              <TableCell align="right">Time</TableCell>
+              <TableCell align="right">Fastest Lap</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
