@@ -221,7 +221,7 @@ export const raceEvents: RaceEvent[] = [
         {
           time: '1:43:696',
           gap: 'Technical DNF (Read notes)',
-          name: 'Alex (+8)',
+          name: 'Alex (+4)',
         },
         {
           time: 'Did Not Participate',
@@ -252,7 +252,7 @@ export const raceEvents: RaceEvent[] = [
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassettocorsa.vip%2Fwp-content%2Fuploads%2F2020%2F12%2FBAHRAIN-INTERNATIONAL-CIRCUIT.jpg&f=1&nofb=1&ipt=abbc95a10a6bf3afe08f65bef9a9486d932bbd462d64a1875481bdf7e85f2ab8&ipo=images',
     notes:
-      'Note from the Race Direction: even thought Alex did DNF, this DNF was due to technical issue, even due to this event, they have received 8 points.',
+      'Note from the Race Direction: even thought Alex did DNF, this DNF was due to technical issue, even due to this event, they have received 4 points.',
   },
   {
     results: {},
