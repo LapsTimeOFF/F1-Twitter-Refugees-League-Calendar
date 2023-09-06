@@ -260,7 +260,10 @@ export const raceEvents: RaceEvent[] = [
     gpName: 'Qatar Grand Prix',
     countryName: 'Qatar',
     countryFlag: '🇶🇦',
-    date: { qualifying: 'TBD', race: 'TBD' },
+    date: {
+      qualifying: '2023-09-10T17:00:00.000Z',
+      race: '2023-09-10T17:20:00.000Z',
+    },
     circuitName: 'Losail International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fmetropolitanmagazine.it%2Fwp-content%2Fuploads%2F2019%2F03%2F2014-wsbk-qatar-promo-circuit_full.jpg&f=1&nofb=1&ipt=914300f4425574154216f737ac01efa8cb24e1b9909512eb62a2083d9d895535&ipo=images',
