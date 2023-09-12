@@ -255,8 +255,105 @@ export const raceEvents: RaceEvent[] = [
       'Note from the Race Direction: even thought Alex did DNF, this DNF was due to technical issue, even due to this event, they have received 4 points.',
   },
   {
-    results: {},
-    done: false,
+    results: {
+      qualifying: [
+        {
+          time: '1:21.884',
+          gap: 'POLE POSITION',
+          name: 'Natgracing',
+          fastest: true,
+        },
+        {
+          time: '1:21.892',
+          gap: '+0.008',
+          name: 'IV477',
+        },
+        {
+          time: '1:23.059',
+          gap: '+1.175',
+          name: 'Felix_458',
+        },
+        {
+          time: '1:23.385',
+          gap: '+1.501',
+          name: 'MrBlackSpy',
+        },
+        {
+          time: '1:23.606',
+          gap: '+1.812',
+          name: 'Nordotor',
+        },
+        {
+          time: '1:32.505',
+          gap: '+10.621',
+          name: 'Alex',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'captain angel',
+        },
+      ],
+      race: [
+        {
+          time: '1:25.256',
+          gap: 'WINNER',
+          name: 'IV477 (+25)',
+        },
+        {
+          time: '1:24.855',
+          gap: '+0.525',
+          name: 'Natgracing (+19, 3 seconds time penalty)',
+          fastest: true,
+        },
+        {
+          time: '1:26.095',
+          gap: '+1 Lap',
+          name: 'Felix_458',
+        },
+        {
+          time: '1:28.839',
+          gap: 'DNF',
+          name: 'Felix_458',
+        },
+        {
+          time: '1:34.920',
+          gap: 'DNF',
+          name: 'Alex',
+        },
+        {
+          time: 'DNF',
+          gap: 'DNF',
+          name: 'Nordotor',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Captain Angel',
+        },
+      ],
+    },
+    done: true,
     gpName: 'Qatar Grand Prix',
     countryName: 'Qatar',
     countryFlag: '🇶🇦',
@@ -264,6 +361,7 @@ export const raceEvents: RaceEvent[] = [
       qualifying: '2023-09-10T17:00:00.000Z',
       race: '2023-09-10T17:20:00.000Z',
     },
+    notes: "Natgracing received a 3 seconds time penalty for exceeding track limits during Qualifying. MrBlackSpy received a 1 Grid Drop Penalty for causing a collision with Nordotor in the 1st lap.",
     circuitName: 'Losail International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fmetropolitanmagazine.it%2Fwp-content%2Fuploads%2F2019%2F03%2F2014-wsbk-qatar-promo-circuit_full.jpg&f=1&nofb=1&ipt=914300f4425574154216f737ac01efa8cb24e1b9909512eb62a2083d9d895535&ipo=images',
