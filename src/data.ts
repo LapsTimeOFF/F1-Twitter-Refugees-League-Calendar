@@ -372,7 +372,7 @@ export const raceEvents: RaceEvent[] = [
     gpName: 'Abu Dhabi Grand Prix',
     countryName: 'United Arab Emirates',
     countryFlag: '🇦🇪',
-    date: { qualifying: 'TBD', race: 'TBD' },
+    date: { qualifying: '2023-09-24T17:00:00.000Z', race: '2023-09-10T17:25:00.000Z' },
     circuitName: 'Yas Marina Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.timeoutabudhabi.com%2Fpublic%2Fimages%2F2020%2F07%2F01%2Fyas-marina-circuit-drive-in-cinema.jpg&f=1&nofb=1&ipt=5f522eae0ce65da4f84b9e7b824ece88f91ba3774fe84a1c319bc74fe74ae73f&ipo=images',
