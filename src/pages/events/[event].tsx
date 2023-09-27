@@ -42,6 +42,23 @@ export default function Page({
     <Container>
       <Head>
         <title>{event.gpName} | League Calendar</title>
+        <meta
+          name="description"
+          content={`League Calendar - ${event.gpName} - ${event.countryName}`}
+        />
+        <meta
+          property="og:title"
+          content={`${event.countryFlag} | ${event.gpName}`}
+        />
+        <meta property="og:description" content={event.countryName} />
+        <meta property="og:image" content={event.countryFlag} />
+        <meta property="og:url" content={router.asPath} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@LeagueCalendar" />
+        <meta name="twitter:creator" content="@LeagueCalendar" />
+        <meta name="twitter:title" content={event.gpName} />
+        <meta name="twitter:description" content={event.countryName} />
+        <meta name="twitter:image" content={event.countryFlag} />
       </Head>
       <IconButton aria-label="back" LinkComponent={Link} href="/">
         <ArrowBackIcon

@@ -319,22 +319,22 @@ export const raceEvents: RaceEvent[] = [
         {
           time: '1:26.095',
           gap: '+1 Lap',
-          name: 'Felix_458',
+          name: 'Felix_458 (+15)',
         },
         {
           time: '1:28.839',
           gap: 'DNF',
-          name: 'Felix_458',
+          name: 'MrBlackSpy (+6)',
         },
         {
           time: '1:34.920',
           gap: 'DNF',
-          name: 'Alex',
+          name: 'Alex (+5)',
         },
         {
           time: 'DNF',
           gap: 'DNF',
-          name: 'Nordotor',
+          name: 'Nordotor (+4)',
         },
         {
           time: 'Did Not Participate',
@@ -361,19 +361,121 @@ export const raceEvents: RaceEvent[] = [
       qualifying: '2023-09-10T17:00:00.000Z',
       race: '2023-09-10T17:20:00.000Z',
     },
-    notes: "Natgracing received a 3 seconds time penalty for exceeding track limits during Qualifying. MrBlackSpy received a 1 Grid Drop Penalty for causing a collision with Nordotor in the 1st lap.",
+    notes:
+      'Natgracing received a 3 seconds time penalty for exceeding track limits during Qualifying. MrBlackSpy received a 1 Grid Drop Penalty for causing a collision with Nordotor in the 1st lap.',
     circuitName: 'Losail International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fmetropolitanmagazine.it%2Fwp-content%2Fuploads%2F2019%2F03%2F2014-wsbk-qatar-promo-circuit_full.jpg&f=1&nofb=1&ipt=914300f4425574154216f737ac01efa8cb24e1b9909512eb62a2083d9d895535&ipo=images',
   },
   {
-    results: {},
-    done: false,
+    results: {
+      qualifying: [
+        {
+          time: '1:23.289',
+          gap: 'POLE POSITION',
+          name: 'Natgracing',
+          fastest: true,
+        },
+        {
+          time: '1:23.451',
+          gap: '+0.162',
+          name: 'IV477',
+        },
+        {
+          time: '1:23.866',
+          gap: '+0.577',
+          name: 'MrBlackSpy (1 Grid Drop Penalty not counted here)',
+        },
+        {
+          time: '1:24.423',
+          gap: '+1.134',
+          name: 'Nordotor',
+        },
+        {
+          time: '1:25.234',
+          gap: '+1.945',
+          name: 'Felix_458',
+        },
+        {
+          time: '1:28.439',
+          gap: '+5.150',
+          name: 'Alex',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'captain angel',
+        },
+      ],
+      race: [
+        {
+          time: '1:25.542',
+          gap: 'WINNER',
+          name: 'IV477 (+26)',
+          fastest: true,
+        },
+        {
+          time: '1:28.877',
+          gap: '+41.611',
+          name: 'Felix_458 (+18)',
+        },
+        {
+          time: '1:27.591',
+          gap: '+1:06:026',
+          name: 'Nordotor (+15)',
+        },
+        {
+          time: '1:26.056',
+          gap: '+3 Laps (Classified on DNF)',
+          name: 'Natgracing (+12)',
+        },
+        {
+          time: '1:29.520',
+          gap: 'DNF',
+          name: 'MrBlackSpy (+5)',
+        },
+        {
+          time: '1:32.229',
+          gap: 'DNF',
+          name: 'Alex (+4)',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Vinny',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Mihael03',
+        },
+        {
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+          name: 'Captain Angel',
+        },
+      ],
+    },
+    done: true,
     gpName: 'Abu Dhabi Grand Prix',
     countryName: 'United Arab Emirates',
-    notes: 'Due to an issue with the "Equal Performance" setting, we will exceptionally be running with the F1 World Cars.',
+    notes:
+      'Due to an issue with the "Equal Performance" setting, we will exceptionally be running with the F1 World Cars.',
     countryFlag: '🇦🇪',
-    date: { qualifying: '2023-09-24T17:00:00.000Z', race: '2023-09-24T17:25:00.000Z' },
+    date: {
+      qualifying: '2023-09-24T17:00:00.000Z',
+      race: '2023-09-24T17:25:00.000Z',
+    },
     circuitName: 'Yas Marina Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.timeoutabudhabi.com%2Fpublic%2Fimages%2F2020%2F07%2F01%2Fyas-marina-circuit-drive-in-cinema.jpg&f=1&nofb=1&ipt=5f522eae0ce65da4f84b9e7b824ece88f91ba3774fe84a1c319bc74fe74ae73f&ipo=images',
