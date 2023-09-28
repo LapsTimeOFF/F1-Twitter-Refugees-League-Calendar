@@ -486,7 +486,7 @@ export const raceEvents: RaceEvent[] = [
     gpName: 'Chinese Grand Prix',
     countryName: 'China',
     countryFlag: '🇨🇳',
-    date: { qualifying: 'TBD', race: 'TBD' },
+    date: { qualifying: '2023-10-01T17:00:00.000Z', race: '2023-10-01T17:30:00.000Z' },
     circuitName: 'Shanghai International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2c%2Fd3%2Fce%2F2cd3ced4e5a8afa063b1a4bf18161cc4.jpg&f=1&nofb=1&ipt=c07ac3239a6341aea52b6c3431ecc2b22fbc822552011e20b417f0d775c8c6c4&ipo=images',
