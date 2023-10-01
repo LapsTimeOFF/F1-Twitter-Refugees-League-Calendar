@@ -44,14 +44,14 @@ const Timetable: FC<Props> = ({ event }) => {
             >
               <TableCell>{sessionsDisplayName[key as SessionsName]}</TableCell>
               <TableCell>
-                {value !== ('TBD' || 'Cancelled') ? (
+                {value !== 'TBD' && value !== 'Cancelled' ? (
                   <FormattedDate value={value} day="numeric" month="long" />
                 ) : (
                   value
                 )}
               </TableCell>
               <TableCell>
-                {value !== ('TBD' || 'Cancelled') ? (
+                {value !== 'TBD' && value !== 'Cancelled' ? (
                   <FormattedTime
                     value={value}
                     hour12={false}
@@ -64,7 +64,7 @@ const Timetable: FC<Props> = ({ event }) => {
                 )}
               </TableCell>
               <TableCell>
-                {value !== ('TBD' || 'Cancelled') ? (
+                {value !== 'TBD' && value !== 'Cancelled' ? (
                   <>
                     {new Date(value) > new Date() ? (
                       <Chip color="success" label="Upcoming" />

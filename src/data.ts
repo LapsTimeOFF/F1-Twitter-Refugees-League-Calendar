@@ -481,15 +481,67 @@ export const raceEvents: RaceEvent[] = [
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.timeoutabudhabi.com%2Fpublic%2Fimages%2F2020%2F07%2F01%2Fyas-marina-circuit-drive-in-cinema.jpg&f=1&nofb=1&ipt=5f522eae0ce65da4f84b9e7b824ece88f91ba3774fe84a1c319bc74fe74ae73f&ipo=images',
   },
   {
-    results: {},
+    results: {
+      qualifying: [
+        {
+          name: 'Natgracing',
+          time: '1:32.321',
+          gap: 'POLE POSITION',
+          fastest: true,
+        },
+        {
+          name: 'IV477',
+          time: '1:32.367',
+          gap: '+0.046',
+        },
+        {
+          name: 'Vinny',
+          time: '1:32.587',
+          gap: '+0.266',
+        },
+        {
+          name: 'MrBlackSpy (2 Grid Drop Penalty not counted here)',
+          time: '1:33.202',
+          gap: '+0.881',
+        },
+        {
+          name: 'Nordotor',
+          time: '1:34.353',
+          gap: '+2.032',
+        },
+        {
+          name: 'Felix_458 (Connection Issues)',
+          time: '1:34.363',
+          gap: '+2.042',
+        },
+        {
+          name: 'Mihael03',
+          time: '1:35.594',
+          gap: '+3.273',
+        },
+        {
+          name: 'Alex',
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+        },
+        {
+          name: 'captain angel',
+          time: 'Did Not Participate',
+          gap: 'Did Not Participate',
+        },
+      ],
+    },
     done: false,
     gpName: 'Chinese Grand Prix',
     countryName: 'China',
     countryFlag: '🇨🇳',
-    date: { qualifying: '2023-10-01T17:00:00.000Z', race: '2023-10-01T17:30:00.000Z' },
+    date: { qualifying: '2023-10-01T17:00:00.000Z', race: 'Cancelled' },
     circuitName: 'Shanghai International Circuit',
     circuitImage:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2c%2Fd3%2Fce%2F2cd3ced4e5a8afa063b1a4bf18161cc4.jpg&f=1&nofb=1&ipt=c07ac3239a6341aea52b6c3431ecc2b22fbc822552011e20b417f0d775c8c6c4&ipo=images',
+    notes:
+      'This race weekend had to be aborted half way due to server connections issues. We apologies for the inconvenience. The race is pending to be rescheduled.',
+    clickForDetails: true,
   },
   {
     results: {},
